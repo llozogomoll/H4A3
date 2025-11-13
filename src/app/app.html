@@ -1,0 +1,19 @@
+<div class="contenedor">
+
+  <h1>Lista de Palabras</h1>
+
+  <!-- Tarjeta para agregar -->
+  <div class="card">
+    <app-agregar-palabra
+      (nuevaPalabraEvent)="agregarPalabraALista($event)">
+    </app-agregar-palabra>
+  </div>
+
+  <!-- Tarjeta de la lista -->
+  <div class="card">
+    <app-lista-palabras
+      [palabras]="listaPalabras">
+    </app-lista-palabras>
+  </div>
+
+</div>

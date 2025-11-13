@@ -1,0 +1,67 @@
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 4px;
+  font-size: 17px;
+}
+
+.texto {
+  display: flex;
+  align-items: center;
+}
+
+.acciones {
+  display: flex;
+  gap: 12px;
+}
+
+
+
+.btn-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+ 
+  transition: 0.25s ease;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.15);
+}
+
+.btn-icon:hover {
+  transform: scale(1.08);
+}
+
+
+.material-icons {
+  font-size: 22px;
+  color: white;
+}
+
+
+.btn-edit {
+  background: #f59e0b; 
+}
+.btn-edit:hover {
+  background: #d97706;
+}
+
+.btn-save {
+  background: #3b82f6; 
+}
+.btn-save:hover {
+  background: #2563eb;
+}
+
+.btn-delete {
+  background: #ef4444; 
+}
+.btn-delete:hover {
+  background: #dc2626;
+}

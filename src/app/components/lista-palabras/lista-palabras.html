@@ -1,0 +1,37 @@
+<h2>Lista Palabra</h2>
+
+<ul>
+  <li *ngFor="let palabra of palabras; let i = index">
+
+    <div class="texto">
+      <span *ngIf="editIndex !== i">{{ palabra }}</span>
+      <input *ngIf="editIndex === i" [(ngModel)]="editValue" />
+    </div>
+
+    <div class="acciones">
+
+      
+      <button *ngIf="editIndex !== i"
+        class="btn-icon btn-edit"
+        (click)="editar(i)">
+        <span class="material-icons">edit</span>
+      </button>
+
+     
+      <button *ngIf="editIndex === i"
+        class="btn-icon btn-save"
+        (click)="guardar(i)">
+        <span class="material-icons">save</span>
+      </button>
+
+      
+      <button
+        class="btn-icon btn-delete"
+        (click)="eliminar(i)">
+        <span class="material-icons">delete</span>
+      </button>
+
+    </div>
+
+  </li>
+</ul>

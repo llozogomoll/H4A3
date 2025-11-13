@@ -1,0 +1,15 @@
+<h2>Agregar Nueva Palabra</h2>
+
+<div class="grupo-input">
+  <input
+    type="text"
+    [(ngModel)]="nuevaPalabra"
+    placeholder="Escriba una palabra..."
+    (keyup.enter)="agregarPalabra()"
+  />
+
+  <button class="btn-add" (click)="agregarPalabra()">
+    <span class="material-icons">add_circle</span>
+    Agregar
+  </button>
+</div>

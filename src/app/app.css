@@ -1,0 +1,76 @@
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: #f3f5f7;
+  margin: 0;
+}
+
+.contenedor {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #1f2937;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #374151;
+}
+
+input {
+  width: 70%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 15px;
+}
+
+button {
+  border: none;
+  padding: 10px 16px;
+  margin-left: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.boton-add { background: #4CAF50; color: white; }
+.boton-edit { background: #F59E0B; color: white; }
+.boton-save { background: #3B82F6; color: white; }
+.boton-delete { background: #EF4444; color: white; }
+
+ul { list-style: none; padding: 0; }
+li {
+  background: #f9fafb;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.material-icons {
+  font-size: 18px;
+}
